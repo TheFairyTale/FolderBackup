@@ -1,0 +1,12 @@
+2023-10-19 16:23:10 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table users (\000a  id  int[*](3) primary key,\000a  name varchar(20),\000a  email varchar(20),\000a  country varchar(20),\000a  password varchar(20)\000a  );"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table users (
+  id  int(3) primary key,
+  name varchar(20),
+  email varchar(20),
+  country varchar(20),
+  password varchar(20)
+  ); [42001-214]
+2023-10-19 16:24:23 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table users (  id  int[*](3) primary key,  name varchar(20),  email varchar(20),  country varchar(20),  password varchar(20)  );"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table users (  id  int(3) primary key,  name varchar(20),  email varchar(20),  country varchar(20),  password varchar(20)  ); [42001-214]
